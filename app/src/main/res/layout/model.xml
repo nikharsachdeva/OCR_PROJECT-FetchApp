@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/fruits"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/movieImage"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorAccent"
+            android:onClick="sendSMS"
+            />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/movieImage"
+            android:layout_below="@+id/nameTxt"
+            android:paddingLeft="10dp"
+            android:text="Time"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#3700B3" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
